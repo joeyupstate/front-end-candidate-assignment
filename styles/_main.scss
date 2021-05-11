@@ -1,31 +1,32 @@
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+ @include flexStartColumn();
+ 
 
   h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family:  $OpenSans;
     font-weight: 400;
     font-size: 32px;
     color: $darkGrey;
     line-height: 28px;
     letter-spacing: 2.4px;
+    text-align: center;
   }
 
   h3 {
-    font-family: "Open Sans", sans-serif;
+    font-family: $OpenSans;
     font-weight: 400;
     font-size: 19px;
     color: $lightGrey;
     line-height: 31px;
     letter-spacing: 0.2px;
+    text-align: center;
   }
   #card-container {
-    display: flex;
-    flex-direction: row;
+    display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+   
 
     .card {
       height: 340px;
@@ -45,7 +46,7 @@ main {
         align-items: center;
       }
       h4 {
-        font-family: "Open Sans", sans-serif;
+        font-family: $OpenSans;
         font-size: 18px;
         line-height: 31px;
         letter-spacing: 0.9px;
@@ -56,9 +57,23 @@ main {
         text-align: center;
         color: $lightGrey;
         font-weight: 400;
-        font-family: "Open Sans", sans-serif;
+        font-family: $OpenSans;
         font-size: 16px;
       }
     }
   }
 }
+
+
+@media screen and (max-width: 900px) {
+  #card-container {
+   display:flex;
+   justify-content: flex-start!important;
+   align-items: center;
+   flex-direction: column!important;
+
+   
+  }
+}
+  
+

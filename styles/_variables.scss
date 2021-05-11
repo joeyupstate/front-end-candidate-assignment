@@ -3,6 +3,11 @@ $lightGrey: #bbbbbb;
 $darkGrey: #666f77;
 $heroText: white;
 
+
+//Fonts
+$OpenSans: "Open Sans", sans-serif;
+
+
 @mixin flexCenter {
   display: flex;
   justify-content: center;
@@ -15,4 +20,12 @@ $heroText: white;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@mixin flexStartColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
 }
