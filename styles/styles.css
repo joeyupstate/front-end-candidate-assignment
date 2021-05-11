@@ -23,7 +23,7 @@
 
 .hero-image h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 32px;
+  font-size: 45px;
   color: white;
   line-height: 28px;
   font-weight: 600;
@@ -37,6 +37,7 @@
   line-height: 28px;
   font-weight: 400;
   text-align: center;
+  margin-top: -15px;
 }
 
 .hero-image #hero-button {
@@ -61,6 +62,83 @@
           flex-direction: row;
   color: white;
   font-size: 20px;
+  margin-top: 20px;
+}
+
+.hero-image #hero-button:hover {
+  background-color: white;
+  border: 2px solid #216c94;
+  color: #216c94;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-image {
+    background-image: url("../Assets/hero.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-image h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    color: white;
+    line-height: 28px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .hero-image h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -15px;
+  }
+  .hero-image #hero-button {
+    height: 50px;
+    width: 250px;
+    background-color: #4ac1ff;
+    outline-style: none;
+    border: none;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .hero-image #hero-button:hover {
+    background-color: white;
+    border: 2px solid #216c94;
+    color: #216c94;
+  }
 }
 
 main {
@@ -87,6 +165,7 @@ main h1 {
   line-height: 28px;
   letter-spacing: 2.4px;
   text-align: center;
+  margin-top: 80px;
 }
 
 main h3 {
@@ -97,6 +176,7 @@ main h3 {
   line-height: 31px;
   letter-spacing: 0.2px;
   text-align: center;
+  margin-top: -15px;
 }
 
 main #card-container {
@@ -113,6 +193,7 @@ main #card-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-bottom: 100px;
 }
 
 main #card-container .card {
@@ -134,6 +215,10 @@ main #card-container .card {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+main #card-container .card:hover > .circle {
+  -webkit-transform: scale(1.1);
 }
 
 main #card-container .card .circle {
@@ -169,8 +254,14 @@ main #card-container .card p {
   font-size: 16px;
 }
 
-@media screen and (max-width: 900px) {
-  #card-container {
+@media screen and (max-width: 992px) {
+  main h1 {
+    font-size: 30px;
+  }
+  main h3 {
+    font-size: 18px;
+  }
+  main #card-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -184,6 +275,50 @@ main #card-container .card p {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+  }
+  main #card-container .card {
+    height: 500px;
+    width: 350px;
+  }
+  main #card-container .card h4 {
+    font-size: 25px;
+  }
+  main #card-container .card p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main h1 {
+    font-size: 22px;
+  }
+  main h3 {
+    font-size: 15px;
+  }
+  main #card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  main #card-container .card {
+    height: 340px;
+    width: 260px;
+  }
+  main #card-container .card h4 {
+    font-size: 18px;
+  }
+  main #card-container .card p {
+    font-size: 16px;
   }
 }
 
@@ -205,11 +340,11 @@ header {
   height: 80px;
 }
 
-.logo {
+header .logo {
   margin-left: 120px;
 }
 
-.hamburger-icon {
+header .hamburger-icon {
   height: 40px;
   width: 40px;
   margin-top: 5px;
@@ -219,7 +354,7 @@ header {
   display: none;
 }
 
-.close-icon {
+header .close-icon {
   height: 30px;
   width: 30px;
   display: none;
@@ -230,7 +365,7 @@ header {
   margin-left: 10px;
 }
 
-.nav {
+header .nav {
   width: 600px;
   background-color: white;
   height: 80px;
@@ -240,7 +375,7 @@ header {
   z-index: 1;
   overflow: hidden;
   margin-top: -40px;
-  right: 0px;
+  right: 80px;
   top: 40px;
   position: absolute;
   display: -webkit-box;
@@ -254,7 +389,7 @@ header {
           align-items: center;
 }
 
-.nav ul {
+header .nav ul {
   list-style: none;
   color: #666f77;
   font-size: 20px;
@@ -262,13 +397,18 @@ header {
   text-align: center;
 }
 
-.nav ul li {
+header .nav ul li {
   margin-top: 40px;
   display: inline;
   margin: 10px;
 }
 
-.nav #nav-button {
+header .nav ul li:hover {
+  color: #4ac1ff;
+  cursor: pointer;
+}
+
+header #nav-button {
   height: 40px;
   width: 150px;
   background-color: #4ac1ff;
@@ -279,6 +419,12 @@ header {
   color: white;
   font-size: 20px;
   margin: 10px;
+}
+
+header #nav-button:hover {
+  background-color: white;
+  border: 2px solid #216c94;
+  color: #216c94;
 }
 
 .visible-nav {
@@ -303,7 +449,7 @@ header {
   z-index: 2;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   header {
     width: 100%;
     display: -webkit-box;
@@ -321,10 +467,10 @@ header {
             align-items: center;
     height: 80px;
   }
-  .logo {
+  header .logo {
     margin-left: 50px;
   }
-  .hamburger-icon {
+  header .hamburger-icon {
     height: 40px;
     width: 40px;
     margin-top: 5px;
@@ -333,7 +479,7 @@ header {
     z-index: 2;
     display: block;
   }
-  .nav {
+  header .nav {
     width: 0px;
     background-color: white;
     height: 100%;
@@ -358,12 +504,7 @@ header {
         -ms-flex-align: center;
             align-items: center;
   }
-  .nav ul li {
-    margin-top: 40px;
-    display: block;
-    margin-right: 50px;
-  }
-  .visible-nav {
+  header .visible-nav {
     width: 200px;
     background-color: white;
     height: 100%;
@@ -387,7 +528,12 @@ header {
     -webkit-transition: 0.5s width;
     transition: 0.5s width;
   }
-  #nav-button {
+  header .visible-nav ul li {
+    margin-top: 40px;
+    display: block;
+    margin-right: 50px;
+  }
+  header .visible-nav #nav-button {
     height: 40px;
     width: 150px;
     background-color: #4ac1ff;

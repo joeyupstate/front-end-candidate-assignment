@@ -1,7 +1,6 @@
 .hero-image {
   background-image: url("../Assets/hero.jpg");
   height: 50%;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,20 +8,21 @@
   @include flexCenterColumn();
 
   h1 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 32px;
+    font-family: $OpenSans;
+    font-size: 45px;
     color: $heroText;
     line-height: 28px;
     font-weight: 600;
     text-align: center;
   }
   h3 {
-    font-family: "Open Sans", sans-serif;
+    font-family: $OpenSans;
     font-size: 19px;
     color: $heroText;
     line-height: 28px;
     font-weight: 400;
     text-align: center;
+    margin-top: -15px;
   }
 
   #hero-button {
@@ -35,5 +35,59 @@
     @include flexCenter();
     color: $heroText;
     font-size: 20px;
+    margin-top: 20px;
+    &:hover {
+      background-color: white;
+      border: 2px solid $DarkButtonColor;
+      color: $DarkButtonColor;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-image {
+    background-image: url("../Assets/hero.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    @include flexCenterColumn();
+
+    h1 {
+      font-family: $OpenSans;
+      font-size: 35px;
+      color: $heroText;
+      line-height: 28px;
+      font-weight: 600;
+      text-align: center;
+    }
+    h3 {
+      font-family: $OpenSans;
+      font-size: 16px;
+      color: $heroText;
+      line-height: 28px;
+      font-weight: 400;
+      text-align: center;
+      margin-top: -15px;
+    }
+
+    #hero-button {
+      height: 50px;
+      width: 250px;
+      background-color: $buttonColor;
+      outline-style: none;
+      border: none;
+      border-radius: 5px;
+      @include flexCenter();
+      color: $heroText;
+      font-size: 20px;
+      margin-top: 20px;
+      &:hover {
+        background-color: white;
+        border: 2px solid $DarkButtonColor;
+        color: $DarkButtonColor;
+      }
+    }
   }
 }

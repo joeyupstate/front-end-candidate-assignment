@@ -1,4 +1,6 @@
+//Colors
 $buttonColor: #4ac1ff;
+$DarkButtonColor: #216c94;
 $lightGrey: #bbbbbb;
 $darkGrey: #666f77;
 $heroText: white;
@@ -8,6 +10,7 @@ $heroText: white;
 $OpenSans: "Open Sans", sans-serif;
 
 
+//mixins
 @mixin flexCenter {
   display: flex;
   justify-content: center;

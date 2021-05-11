@@ -1,15 +1,15 @@
 main {
- @include flexStartColumn();
- 
+  @include flexStartColumn();
 
   h1 {
-    font-family:  $OpenSans;
+    font-family: $OpenSans;
     font-weight: 400;
     font-size: 32px;
     color: $darkGrey;
     line-height: 28px;
     letter-spacing: 2.4px;
     text-align: center;
+    margin-top: 80px;
   }
 
   h3 {
@@ -20,13 +20,14 @@ main {
     line-height: 31px;
     letter-spacing: 0.2px;
     text-align: center;
+    margin-top: -15px;
   }
   #card-container {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-   
+    margin-bottom: 100px;
 
     .card {
       height: 340px;
@@ -35,6 +36,9 @@ main {
       border-radius: 5px;
       margin: 20px;
       @include flexCenterColumn();
+      &:hover > .circle {
+        -webkit-transform: scale(1.1);
+      }
 
       .circle {
         height: 100px;
@@ -64,16 +68,58 @@ main {
   }
 }
 
+@media screen and (max-width: 992px) {
+  main {
+    h1 {
+      font-size: 30px;
+    }
 
-@media screen and (max-width: 900px) {
-  #card-container {
-   display:flex;
-   justify-content: flex-start!important;
-   align-items: center;
-   flex-direction: column!important;
-
-   
+    h3 {
+      font-size: 18px;
+    }
+    #card-container {
+      display: flex;
+      justify-content: flex-start !important;
+      align-items: center;
+      flex-direction: column !important;
+      .card {
+        height: 500px;
+        width: 350px;
+        h4 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
-  
 
+@media screen and (max-width: 650px) {
+  main {
+    h1 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+    #card-container {
+      display: flex;
+      justify-content: flex-start !important;
+      align-items: center;
+      flex-direction: column !important;
+      .card {
+        height: 340px;
+        width: 260px;
+        h4 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
