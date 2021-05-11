@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+.hero-image {
+  background-image: url("../Assets/hero.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-image h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  color: white;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.hero-image h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  color: white;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.hero-image #hero-button {
+  height: 50px;
+  width: 250px;
+  background-color: #4ac1ff;
+  outline-style: none;
+  border: none;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  font-size: 20px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #666f77;
+  line-height: 28px;
+  letter-spacing: 2.4px;
+}
+
+main h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  color: #bbbbbb;
+  line-height: 31px;
+  letter-spacing: 0.2px;
+}
+
+main #card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #card-container .card {
+  height: 340px;
+  width: 260px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #card-container .card .circle {
+  height: 100px;
+  width: 100px;
+  background-color: #4ac1ff;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #card-container .card h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 0.9px;
+  color: #bbbbbb;
+  font-weight: 400;
+}
+
+main #card-container .card p {
+  text-align: center;
+  color: #bbbbbb;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: 1px solid black;
+}
+
+.hamburger-icon {
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.close-icon {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.nav {
+  width: 0px;
+  background-color: white;
+  height: 100%;
+  right: 0px;
+  -webkit-transition: 0.5s width;
+  transition: 0.5s width;
+  z-index: 1;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  margin-top: -40px;
+  right: 0px;
+  top: 40px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visible-nav {
+  width: 200px;
+  background-color: white;
+  height: 100%;
+  margin-top: -40px;
+  right: 0px;
+  top: 40px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s width;
+  transition: 0.5s width;
+}
+
+.nav ul {
+  list-style: none;
+  color: #0b84ba;
+  font-size: 30px;
+}
+
+.nav ul li {
+  margin-top: 40px;
+  display: block;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */

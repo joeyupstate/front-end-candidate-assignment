@@ -1,0 +1,38 @@
+.hero-image {
+  background-image: url("../Assets/hero.jpg");
+
+  height: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  @include flexCenterColumn();
+
+  h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    color: $heroText;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    color: $heroText;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  #hero-button {
+    height: 50px;
+    width: 250px;
+    background-color: $buttonColor;
+    outline-style: none;
+    border: none;
+    border-radius: 5px;
+    @include flexCenter();
+    color: $heroText;
+    font-size: 20px;
+  }
+}

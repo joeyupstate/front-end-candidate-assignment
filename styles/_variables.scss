@@ -1,0 +1,18 @@
+$buttonColor: #4ac1ff;
+$lightGrey: #bbbbbb;
+$darkGrey: #666f77;
+$heroText: white;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@mixin flexCenterColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
